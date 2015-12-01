@@ -12,7 +12,7 @@
 <div id="sidebar">
   <div id="logo">
     <%= link_to root_path do %>
-      <%= image_tag "logo.svg" %>
+      <%= image_tag "logo.png" %>
     <% end %>
   </div>
 
@@ -51,7 +51,7 @@
     <% if user_signed_in? %>
       <div class="buttons">
         <button class="button"><%= link_to "New Post", new_post_path %></button>
-        <button class="button">Log out</button>
+        <button class="button"><%= link_to "Log out", '' %></button>
       </div>
     <% end %>
   </div>
